@@ -1,6 +1,8 @@
 /* TEAM
 -------------------------------------------------*/
 .team {
+
+    margin-top: 70px;
     @extend %clearfix;
     @extend %space;
     overflow: hidden;
@@ -9,6 +11,17 @@
     h2, h4 {
         color: $white;
     }
+
+    .owl-wrapper-outer {
+      margin-left: 0%;
+    }
+
+    @media (min-width: 900px) {
+      .owl-wrapper-outer {
+        margin-left: 25%;
+      }
+    }
+
     h4 {
         padding: 10px 0 0;
         margin: 0;
