@@ -129,7 +129,13 @@ layout: default
                     <div class="icon-box">
                         <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
                         <h4>{{ treatment.title }}</h4>
-                        <p>{{ treatment.description }}</p>
+                        {% comment %}<p>{{ treatment.description }}</p>{% endcomment %}
+
+                        <ul>
+                          {% for item in treatment.description %}
+                            <li>{{ item }}</li>
+                          {% endfor %}
+                        </ul>
                     </div>
                 </div>
             {% endfor %}

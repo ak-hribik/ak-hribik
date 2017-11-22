@@ -1,23 +1,54 @@
 - icon: icon-user-md
-  title: Invisible braces
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+  title: Občianske právo
+  description:
+    - Vypracovanie zmlúv a dohôd
+    - Riešenie majetkových sporov
+    - Zastupovanie v sporovom a nesporovom konaní
+    - Zastupovanie v dedičskom konaní
+    - Vymáhanie pohľadávok
+    - Vypracovanie právnych analýz a právnych rozborov
 
 - icon: icon-diamond
-  title: Cosmetic Dentistry
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+  title: Rodinné právo
+  description:
+    - Poskytovanie právnej pomoci pri rozvode a zastupovanie v rozvodovom konaní
+    - Zastupovanie v konaní o úprave práv a povinností maloletých
+    - Právna pomoc pri vyporiadaní bezpodielového spoluvlastníctva manželov
+    - Uplatňovanie nárokov na výživné
 
 - icon: icon-flask
-  title: Stain removal
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  title: Trestné právo
+  description:
+    - Právne poradenstvo v oblasti trestného práva pre obvinených, obžalovaných, odsúdených a poškodených
+    - Vypracovanie podnetov a oznámení o podozrení zo spáchania trestného činu
+    - Zastupovanie obvinených, obžalovaných a odsúdených v trestnom konaní
+    - Uplatňovanie nárokov poškodených
 
 - icon: icon-globe
-  title: Dentures
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+  title: Obchodné právo
+  description:
+    - Zakladanie obchodných spoločností a ich organizačných zložiek
+    - Zlúčenie, splynutie, rozdelenie obchodných spoločností
+    - Zmeny v obchodných spoločnostiach, vypracovávanie listín a podkladov
+    - Vypracovanie obchodných zmlúv, dohôd a ich pripomienkovanie
+    - Vymáhanie pohľadávok v
+    - Vypracovanie právnych analýz a právnych rozborov
 
 - icon: icon-ambulance
-  title: Emergency Calls
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+  title: Exekučné právo
+  description:
+    - Podávanie návrhov na výkon rozhodnutí
+    - Zastupovanie oprávnených a povinných v konaní o výkon rozhodnutia v exekučnom konaní
 
 - icon: icon-bed
-  title: Sedation
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?
+  title: Pracovné právo
+  description:
+    - Príprava a yypracovanie zmluvnej dokumentácie
+    - Poskytovanie právneho poradenstva zamestnávateľom alebo zamestnancom
+    - Zastupovanie v súdnych sporoch
+    - Uplatňovanie nárokov na náhradu škody vrátane pracovných úrazov
+
+- icon: icon-bed
+  title: Správne právo
+  description:
+    - Priestupkové konanie

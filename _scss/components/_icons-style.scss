@@ -6,6 +6,9 @@
     margin-bottom: $space;
     background: $white;
     text-align: center;
+    ul {
+      text-align: left;
+    }
 }
 
 .boxed-icon {
