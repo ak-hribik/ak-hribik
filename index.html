@@ -96,14 +96,6 @@ layout: default
                     <td>Monday – Friday</td>
                     <td>{{ site.monday_friday }}</td>
                 </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>{{ site.saturday }}</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>{{ site.sunday }}</td>
-                </tr>
             </tbody>
         </table>
     </div>
@@ -169,5 +161,5 @@ layout: default
 <!-- End Testimonials -->
 
 <!-- Start Map -->
-<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>" data-key="{{ site.map.google_maps_api_token}}"></div>
 <!-- End Map -->
