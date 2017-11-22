@@ -67,7 +67,6 @@
         }   
         
         $(this).gmap3({
-            key: $(this).attr("data-key"),
             marker: {
                 values: [{
                     address: $(this).attr("data-address"),
