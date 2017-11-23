@@ -24,96 +24,90 @@ layout: default
 </div>
 <!-- End Our team -->
 
+<!-- Start Testimonials -->
+<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
+    <div class="overlay-container">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div id="testimonial-carousel">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="testimonial-item">
+                      {% comment %}<svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg> {% endcomment %}
 
-<!-- Start About -->
-<div id="about" class="about">
-    <div class="container-fluid">
-        <h2 class="section-title">O Nás</h2>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Vitajte na AK-Hribik</h3>
-                <p>Matej Hribik JUDR &amp; Mgr. Nina Hribiková</p>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-briefcase"><use xlink:href="#icon-briefcase"></use></svg>
-                        </div>
+                        <blockquote>
+                            <footer>
+                                {{ testimonial.name }}
+                                <small>{{ testimonial.title }}</small>
+                            </footer>
+                            <p>{{ testimonial.description }}</p>
+                        </blockquote>
                     </div>
-                    <div class="media-body">
-                        <p>Zaoberáme sa pripadmi rôzneho druhy</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-globe"><use xlink:href="#icon-globe"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Akceptujeme pripady z celeho Slovenska</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-group"><use xlink:href="#icon-group"></use></svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Sme tím skúsených právnikov ktorý Vám pomôžu aj stým najťažším prípadom.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img src="img/about.jpg" alt="...">
+                {% endfor %}
             </div>
         </div>
     </div>
 </div>
-<!-- End About -->
+<!-- End Testimonials -->
 
-<!-- Start 3 columns -->
-<div class="three-shade-col">
-    <div class="col-sm-4">
-        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
-        <h3>Contact Us</h3>
-        <ul>
-            {% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
-            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
-            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-        <h3>Opening Hours</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Monday – Friday</td>
-                    <td>{{ site.monday_friday }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-        <h3>Location</h3>
-            <p>
-                {{ site.contact.address }}
-            </p>
-    </div>
-</div>
-<!-- End 3 columns -->
+
+
+
+<!-- Start About -->
+{% comment %}<div id="about" class="about">{% endcomment %}
+    {% comment %}<div class="container-fluid">{% endcomment %}
+        {% comment %}<h2 class="section-title">O Nás</h2>{% endcomment %}
+
+        {% comment %}<div class="row">{% endcomment %}
+            {% comment %}<div class="col-sm-6">{% endcomment %}
+                {% comment %}<h3>Vitajte na AK-Hribik</h3>{% endcomment %}
+                {% comment %}<p>Matej Hribik JUDR &amp; Mgr. Nina Hribiková</p>{% endcomment %}
+
+                {% comment %}<div class="media">{% endcomment %}
+                    {% comment %}<div class="media-left">{% endcomment %}
+                        {% comment %}<div class="boxed-icon">{% endcomment %}
+                            {% comment %}<svg class="icon icon-briefcase"><use xlink:href="#icon-briefcase"></use></svg>{% endcomment %}
+                        {% comment %}</div>{% endcomment %}
+                    {% comment %}</div>{% endcomment %}
+                    {% comment %}<div class="media-body">{% endcomment %}
+                        {% comment %}<p>Zaoberáme sa pripadmi rôzneho druhy</p>{% endcomment %}
+                    {% comment %}</div>{% endcomment %}
+                {% comment %}</div>{% endcomment %}
+
+                {% comment %}<div class="media">{% endcomment %}
+                    {% comment %}<div class="media-left">{% endcomment %}
+                        {% comment %}<div class="boxed-icon">{% endcomment %}
+                            {% comment %}<svg class="icon icon-globe"><use xlink:href="#icon-globe"></use></svg>{% endcomment %}
+                        {% comment %}</div>{% endcomment %}
+                    {% comment %}</div>{% endcomment %}
+                    {% comment %}<div class="media-body">{% endcomment %}
+                        {% comment %}<p>Akceptujeme pripady z celeho Slovenska</p>{% endcomment %}
+                    {% comment %}</div>{% endcomment %}
+                {% comment %}</div>{% endcomment %}
+
+                {% comment %}<div class="media">{% endcomment %}
+                    {% comment %}<div class="media-left">{% endcomment %}
+                        {% comment %}<div class="boxed-icon">{% endcomment %}
+                            {% comment %}<svg class="icon icon-group"><use xlink:href="#icon-group"></use></svg>{% endcomment %}
+                        {% comment %}</div>{% endcomment %}
+                    {% comment %}</div>{% endcomment %}
+                    {% comment %}<div class="media-body">{% endcomment %}
+                        {% comment %}<p>Sme tím skúsených právnikov ktorý Vám pomôžu aj stým najťažším prípadom.</p>{% endcomment %}
+                    {% comment %}</div>{% endcomment %}
+                {% comment %}</div>{% endcomment %}
+            {% comment %}</div>{% endcomment %}
+            {% comment %}<div class="col-sm-6">{% endcomment %}
+                {% comment %}<img src="img/about.jpg" alt="...">{% endcomment %}
+            {% comment %}</div>{% endcomment %}
+        {% comment %}</div>{% endcomment %}
+    {% comment %}</div>{% endcomment %}
+{% comment %}</div>{% endcomment %}
+<!-- End About -->
 
 
 <!-- Start Treatments -->
 <div id="treatments" class="treatments">
     <div class="container-fluid">
-        <h2 class="section-title">Treatments</h2>
+        <h2 class="section-title">Právne služby</h2>
 
         <div class="row">
             {% for treatment in site.data.treatments %}
@@ -136,30 +130,47 @@ layout: default
 </div>
 <!-- End Treatments -->
 
-<!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>{{ testimonial.description }}</p>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
+
+<!-- Start 3 columns -->
+<div id="kontakt" class="three-shade-col">
+    {% for member in site.data.team %}
+      <div class="col-sm-4">
+          <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+          <h3>{{ member.name }}</h3>
+          <ul>
+              {% if member.phone %}<li><strong>Tel:</strong> {{ member.phone }}</li>{% endif %}
+              {% if member.email %}<li><strong>Email:</strong> {{ member.email }}</li>{% endif %}
+          </ul>
+      </div>
+    {% endfor %}
+
+
+    {% comment %}<div class="col-sm-4">{% endcomment %}
+        {% comment %}<svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>{% endcomment %}
+        {% comment %}<h3>Opening Hours</h3>{% endcomment %}
+        {% comment %}<table>{% endcomment %}
+            {% comment %}<tbody>{% endcomment %}
+                {% comment %}<tr>{% endcomment %}
+                    {% comment %}<td>Monday – Friday</td>{% endcomment %}
+                    {% comment %}<td>{{ site.monday_friday }}</td>{% endcomment %}
+                {% comment %}</tr>{% endcomment %}
+            {% comment %}</tbody>{% endcomment %}
+        {% comment %}</table>{% endcomment %}
+    {% comment %}</div>{% endcomment %}
+
+    <div class="col-sm-4">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>Sídlo Advokátskej Kancelárie</h3>
+        <p>
+        {{ site.contact.address }}
+        </p>
     </div>
 </div>
-<!-- End Testimonials -->
+<!-- End 3 columns -->
+
+
 
 <!-- Start Map -->
 <div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
 <!-- End Map -->
+
