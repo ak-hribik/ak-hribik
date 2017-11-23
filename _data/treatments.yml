@@ -1,4 +1,4 @@
-- icon: icon-user-md
+- icon: user-circle
   title: Občianske právo
   description:
     - Vypracovanie zmlúv a dohôd
@@ -8,7 +8,7 @@
     - Vymáhanie pohľadávok
     - Vypracovanie právnych analýz a právnych rozborov
 
-- icon: icon-diamond
+- icon: users
   title: Rodinné právo
   description:
     - Poskytovanie právnej pomoci pri rozvode a zastupovanie v rozvodovom konaní
@@ -16,7 +16,7 @@
     - Právna pomoc pri vyporiadaní bezpodielového spoluvlastníctva manželov
     - Uplatňovanie nárokov na výživné
 
-- icon: icon-flask
+- icon: balance-scale
   title: Trestné právo
   description:
     - Právne poradenstvo v oblasti trestného práva pre obvinených, obžalovaných, odsúdených a poškodených
@@ -24,7 +24,7 @@
     - Zastupovanie obvinených, obžalovaných a odsúdených v trestnom konaní
     - Uplatňovanie nárokov poškodených
 
-- icon: icon-globe
+- icon: usd
   title: Obchodné právo
   description:
     - Zakladanie obchodných spoločností a ich organizačných zložiek
@@ -34,13 +34,13 @@
     - Vymáhanie pohľadávok v
     - Vypracovanie právnych analýz a právnych rozborov
 
-- icon: icon-ambulance
+- icon: gavel
   title: Exekučné právo
   description:
     - Podávanie návrhov na výkon rozhodnutí
     - Zastupovanie oprávnených a povinných v konaní o výkon rozhodnutia v exekučnom konaní
 
-- icon: icon-bed
+- icon: building-o
   title: Pracovné právo
   description:
     - Príprava a yypracovanie zmluvnej dokumentácie
@@ -48,7 +48,7 @@
     - Zastupovanie v súdnych sporoch
     - Uplatňovanie nárokov na náhradu škody vrátane pracovných úrazov
 
-- icon: icon-bed
+- icon: id-card-o
   title: Správne právo
   description:
     - Priestupkové konanie

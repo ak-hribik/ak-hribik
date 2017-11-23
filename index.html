@@ -108,12 +108,13 @@ layout: default
 <div id="treatments" class="treatments">
     <div class="container-fluid">
         <h2 class="section-title">Právne služby</h2>
+        
 
         <div class="row">
             {% for treatment in site.data.treatments %}
                 <div class="col-sm-6 col-md-4">
                     <div class="icon-box">
-                        <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>
+                        <i class="fa fa-{{ treatment.icon }}" aria-hidden="true"></i>
                         <h4>{{ treatment.title }}</h4>
                         {% comment %}<p>{{ treatment.description }}</p>{% endcomment %}
 
@@ -138,7 +139,7 @@ layout: default
           <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
           <h3>{{ member.name }}</h3>
           <ul>
-              {% if member.phone %}<li><strong>Tel:</strong> {{ member.phone }}</li>{% endif %}
+              {% if member.phone %}<li><strong>Tel:</strong> {{ member.phone_pretty }}</li>{% endif %}
               {% if member.email %}<li><strong>Email:</strong> {{ member.email }}</li>{% endif %}
           </ul>
       </div>
