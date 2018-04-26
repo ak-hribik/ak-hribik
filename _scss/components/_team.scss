@@ -2,6 +2,7 @@
 -------------------------------------------------*/
 .team {
 
+    min-height: 400px;
     margin-top: 70px;
     @extend %clearfix;
     @extend %space;

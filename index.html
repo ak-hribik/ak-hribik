@@ -4,51 +4,45 @@ layout: default
 
 <!-- Start Our team -->
 <div id="team" class="team" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;"> 
-    {% comment %}<h2 class="section-title">Our Team</h2> {% endcomment %}
-    <div id="team-carousel">
-    {% for member in site.data.team %}
-        <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
-                <h4>{{ member.name }}</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:{{ member.email }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:{{ member.phone }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
-        </div>
-    {% endfor %}
-    </div>
 </div>
 <!-- End Our team -->
 
-<!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                      {% comment %}<svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg> {% endcomment %}
+<!-- Start 3 columns -->
+<div id="kontakt" class="three-shade-col">
+    {% for member in site.data.team %}
+      <div class="col-sm-4">
+          <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+          <h3>{{ member.name }}</h3>
+          <ul>
+              {% if member.phone %}<li><strong>Tel:</strong> {{ member.phone_pretty }}</li>{% endif %}
+              {% if member.email %}<li><strong>Email:</strong> {{ member.email }}</li>{% endif %}
+          </ul>
+      </div>
+    {% endfor %}
 
-                        <blockquote>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                            <p>{{ testimonial.description }}</p>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
+
+    {% comment %}<div class="col-sm-4">{% endcomment %}
+        {% comment %}<svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>{% endcomment %}
+        {% comment %}<h3>Opening Hours</h3>{% endcomment %}
+        {% comment %}<table>{% endcomment %}
+            {% comment %}<tbody>{% endcomment %}
+                {% comment %}<tr>{% endcomment %}
+                    {% comment %}<td>Monday – Friday</td>{% endcomment %}
+                    {% comment %}<td>{{ site.monday_friday }}</td>{% endcomment %}
+                {% comment %}</tr>{% endcomment %}
+            {% comment %}</tbody>{% endcomment %}
+        {% comment %}</table>{% endcomment %}
+    {% comment %}</div>{% endcomment %}
+
+    <div class="col-sm-4">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>Sídlo Advokátskej Kancelárie</h3>
+        <p>
+        {{ site.contact.address }}
+        </p>
     </div>
 </div>
-<!-- End Testimonials -->
-
+<!-- End 3 columns -->
 
 
 
@@ -132,42 +126,31 @@ layout: default
 <!-- End Treatments -->
 
 
-<!-- Start 3 columns -->
-<div id="kontakt" class="three-shade-col">
-    {% for member in site.data.team %}
-      <div class="col-sm-4">
-          <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
-          <h3>{{ member.name }}</h3>
-          <ul>
-              {% if member.phone %}<li><strong>Tel:</strong> {{ member.phone_pretty }}</li>{% endif %}
-              {% if member.email %}<li><strong>Email:</strong> {{ member.email }}</li>{% endif %}
-          </ul>
-      </div>
-    {% endfor %}
+<!-- Start Testimonials -->
+<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
+    <div class="overlay-container">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div id="testimonial-carousel">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="testimonial-item">
+                      {% comment %}<svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg> {% endcomment %}
 
-
-    {% comment %}<div class="col-sm-4">{% endcomment %}
-        {% comment %}<svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>{% endcomment %}
-        {% comment %}<h3>Opening Hours</h3>{% endcomment %}
-        {% comment %}<table>{% endcomment %}
-            {% comment %}<tbody>{% endcomment %}
-                {% comment %}<tr>{% endcomment %}
-                    {% comment %}<td>Monday – Friday</td>{% endcomment %}
-                    {% comment %}<td>{{ site.monday_friday }}</td>{% endcomment %}
-                {% comment %}</tr>{% endcomment %}
-            {% comment %}</tbody>{% endcomment %}
-        {% comment %}</table>{% endcomment %}
-    {% comment %}</div>{% endcomment %}
-
-    <div class="col-sm-4">
-        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-        <h3>Sídlo Advokátskej Kancelárie</h3>
-        <p>
-        {{ site.contact.address }}
-        </p>
+                        <blockquote>
+                            <footer>
+                                {{ testimonial.name }}
+                                <small>{{ testimonial.title }}</small>
+                            </footer>
+                            <p>{{ testimonial.description }}</p>
+                        </blockquote>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
-<!-- End 3 columns -->
+<!-- End Testimonials -->
+
 
 
 
